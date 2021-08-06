@@ -38,7 +38,4 @@ packages needed:
 
 #############################################################
 
-- cloudinary : fake api
-  // https://cloudinary.com/
-
 // next : build header
