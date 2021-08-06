@@ -2,7 +2,9 @@
 
 -nr components?
 
+- functionalities ?
 - how many sites ?
+- which Component should be reusable ?
 
 - which tech pro site / comp ?
 
@@ -10,6 +12,7 @@
 
 - Navbar
 - Header
+- Main
 - into <main> section Links that shows cards , inside - Cards
 
 ```
@@ -26,10 +29,16 @@ packages needed:
 
 ~ Link : to home / email / safari / like / account + for <main> section : Link to post/reels/IGTV/ tagged
 
-- Header : 2 divs, then cards of photos
+- Header : 2 divs,
+  \_\_ div: Profile: 2 divs / avatar photo + InfoHeader: avatar's name,button etc.
+
+\_\_ div: Cards then cards of photos
 
 - Link : react router , show each component on same site
 
 #############################################################
 
-// problem : not having sass control on child comp of App.js
+- cloudinary : fake api
+  // https://cloudinary.com/
+
+// next : build header
