@@ -1,8 +1,28 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
 @import "./components/navbar";
+@import "./components/header";
+@import "./components/posts";
 
-// .App {
-//   .paragraph {
-//     color: blue;
-//   }
-// }
+.master-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  //   outline: 2px solid red;
+
+  .wrapper-posts-tagged-link {
+    @include evenly;
+
+    .link-posts {
+      display: inline-block;
+      text-decoration: none;
+      color: $primary;
+    }
+
+    .link-tagged {
+      display: inline-block;
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}

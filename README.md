@@ -1,3 +1,6 @@
+- implement this project with Backend?
+- this project is not responsive
+
 - breakdown-notes:
 
 -nr components?
@@ -29,13 +32,22 @@ packages needed:
 
 ~ Link : to home / email / safari / like / account + for <main> section : Link to post/reels/IGTV/ tagged
 
-- Header : 2 divs,
-  \_\_ div: Profile: 2 divs / avatar photo + InfoHeader: avatar's name,button etc.
+- Header :
+- Profile
+- Friends
+
+2 divs,
+\_\_ div: Profile: 2 divs / avatar photo + InfoHeader: avatar's name,button etc.
+
+---
 
 \_\_ div: Cards then cards of photos
 
 - Link : react router , show each component on same site
 
 #############################################################
+// try fetch with axios: refactor the fetch with apiCall module
 
-// next : build header
+// next : interchange color navbar/ body
+// functionality tagged
+// link it to a repo
