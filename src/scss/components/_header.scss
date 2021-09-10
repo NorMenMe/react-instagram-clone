@@ -25,6 +25,9 @@
         border-radius: 50%;
         object-fit: cover;
         object-position: center;
+        border: 3px solid
+          linear-gradient(40deg, #ffbb00, #ff6f5f, #d92d7a, #c52b92);
+        padding: 0.6%;
       }
     }
 

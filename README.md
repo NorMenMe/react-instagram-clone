@@ -48,6 +48,16 @@ packages needed:
 #############################################################
 // try fetch with axios: refactor the fetch with apiCall module
 
+// toggle functionality between tagged and posts
+// on Click style of p change style ref :https://stackoverflow.com/questions/63154498/change-component-property-through-onclick
+
+###################
+
 // next : interchange color navbar/ body
-// functionality tagged
-// link it to a repo
+
+// next :gradient of main photo, read and inspire from code of senzig
+
+// next : tagged functionality:
+
+- optimize name of state photos
+- the names of the small rounded images shouldn't be random on mounting

@@ -4,6 +4,7 @@
 @import "./components/navbar";
 @import "./components/header";
 @import "./components/posts";
+@import "./components/tagged";
 
 .master-wrapper {
   width: 80%;
@@ -13,11 +14,16 @@
   .wrapper-posts-tagged-link {
     @include evenly;
 
-    .link-posts {
-      display: inline-block;
-      text-decoration: none;
-      color: $primary;
+    .toggle-btn-posts {
+      background-color: white;
+      border: none;
     }
+
+    // .link-posts {
+    //   display: inline-block;
+    //   text-decoration: none;
+    //   color: $primary;
+    // }
 
     .link-tagged {
       display: inline-block;

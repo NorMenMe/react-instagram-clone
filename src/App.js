@@ -5,24 +5,38 @@ import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Posts from "./components/Posts";
+import Tagged from "./components/Tagged";
 import { useEffect, useState, useContext } from "react";
 import GlobalState from "./components/GlobalState";
 import axios from "axios";
 import PhotosContext from "./context/initilizeContext";
+import ToggleButtonPosts from "./components/ToggleButtonPosts.js";
+import ToggleButtonTaggs from "./components/ToggleButtonTaggs";
 
 const UNSPLASH_API_KEY = "wXUfFtJ9NppCBXFFQjEyPOJWvAEzxtxUA9K5Pe3xVUY";
 
-const API = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_API_KEY}&query=nature&orientation=landscape`;
+const API_nature = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_API_KEY}&query=nature&orientation=landscape`;
+
+const API_music = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_API_KEY}&query=music&orientation=landscape`;
 
 function App() {
-  const { photos, setPhotos } = useContext(PhotosContext);
+  const { photos, setPhotos, musicPics, setMusicPics } =
+    useContext(PhotosContext);
 
   const readData = () => {
     axios
-      .get(API)
+      .get(API_nature)
       .then(function (response) {
-        // console.log(response.data.results[0].urls.regular);
         setPhotos(response.data.results);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+
+    axios
+      .get(API_music)
+      .then(function (response) {
+        setMusicPics(response.data.results);
       })
       .catch(function (error) {
         console.log(error);
@@ -42,14 +56,16 @@ function App() {
         <hr />
         <div className="wrapper-posts-tagged-link">
           <Link to="/posts">
-            <div className="link-posts">POSTS</div>
+            <ToggleButtonPosts posts={"POSTS"} />
           </Link>
           <Link to="/tagged">
-            <div className="link-tagged">TAGGED</div>
+            {/* <div className="link-tagged">TAGGED</div> */}
+            <ToggleButtonTaggs posts={"TAGGED"} />
           </Link>
         </div>
         <Switch>
           <Route exact path="/posts" component={Posts} />
+          <Route exact path="/tagged" component={Tagged} />
         </Switch>
       </div>
     </BrowserRouter>
