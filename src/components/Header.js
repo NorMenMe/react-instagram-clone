@@ -28,7 +28,11 @@ function Header() {
     <div className="container-wrapper-header">
       <div className="wrapper-header">
         <div className="wrapper-header-img">
-          <img className="header-img" src={database[0].image} />
+          <div className="circle-instagram">
+            <div className="circle-white">
+              <img className="header-img" src={database[0].image} />
+            </div>
+          </div>
         </div>
         <div className="wrapper-header-info">
           <HeaderInfo />

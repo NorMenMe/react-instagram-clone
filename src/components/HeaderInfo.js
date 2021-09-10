@@ -5,12 +5,6 @@ import { Button } from "react-bootstrap";
 import Dropdown from "./Dropdown";
 
 function HeaderInfo() {
-  const randomPosts = Math.floor(Math.random() * 10).toFixed(3);
-
-  const randomFollowers = Math.floor(Math.random() * 100);
-
-  const randomFollowing = Math.floor(Math.random() * 100);
-
   return (
     <>
       <div className="topper">
