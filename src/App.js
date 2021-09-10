@@ -20,7 +20,7 @@ const API_nature = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_
 const API_music = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_API_KEY}&query=music&orientation=landscape`;
 
 function App() {
-  const { photos, setPhotos, musicPics, setMusicPics } =
+  const { photos, setPhotos, musicPics, setMusicPics, color, setColor } =
     useContext(PhotosContext);
 
   const readData = () => {
@@ -45,6 +45,8 @@ function App() {
 
   useEffect(() => {
     readData();
+    // <ToggleButtonPosts />;
+    // setColor(!color);
   }, []);
 
   console.log(photos);
@@ -56,11 +58,10 @@ function App() {
         <hr />
         <div className="wrapper-posts-tagged-link">
           <Link to="/posts">
-            <ToggleButtonPosts posts={"POSTS"} />
+            <ToggleButtonPosts />
           </Link>
           <Link to="/tagged">
-            {/* <div className="link-tagged">TAGGED</div> */}
-            <ToggleButtonTaggs posts={"TAGGED"} />
+            <ToggleButtonTaggs />
           </Link>
         </div>
         <Switch>

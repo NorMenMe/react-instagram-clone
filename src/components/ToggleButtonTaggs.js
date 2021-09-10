@@ -13,7 +13,7 @@ function ToggleButtonTaggs({ posts }) {
       style={{ color: color ? "grey" : "black" }}
       onClick={() => setColor(!color)}
     >
-      {posts}
+      TAGGED
     </button>
   );
 }
