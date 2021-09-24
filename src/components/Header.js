@@ -3,26 +3,10 @@ import database from "../database.json";
 import HeaderInfo from "./HeaderInfo";
 import PhotosContext from "../context/initilizeContext";
 import Card from "./Card";
+import HeaderCards from "./HeaderCards";
 
 function Header() {
   const { photos } = useContext(PhotosContext);
-
-  const randomName = (length) => {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz";
-    let result = "";
-    for (let i = 0; i < length; i++) {
-      result += alphabet.charAt(Math.floor(Math.random() * 23));
-    }
-    return result.split("").join("").toUpperCase();
-  };
-
-  const mapped = photos.slice(0, 3).map((user) => {
-    return (
-      <>
-        <Card photos={user.urls.regular} randomName={randomName} />
-      </>
-    );
-  });
 
   return (
     <div className="container-wrapper-header">
@@ -34,11 +18,9 @@ function Header() {
             </div>
           </div>
         </div>
-        <div className="wrapper-header-info">
-          <HeaderInfo />
-        </div>
+        <HeaderInfo />
       </div>
-      <div className="wrapper-header-cards">{mapped}</div>
+      <HeaderCards />
     </div>
   );
 }

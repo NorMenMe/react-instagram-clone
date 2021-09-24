@@ -4,21 +4,21 @@ function Dropdown() {
   return (
     <div class="dropdown">
       <button
-        class="btn btn-primary dropdown-toggle"
+        className="btn btn-primary dropdown-toggle"
         type="button"
         id="dropdownMenuButton"
         data-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
       ></button>
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a class="dropdown-item" href="#">
+      <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a className="dropdown-item" href="#">
           Action
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           Another action
         </a>
-        <a class="dropdown-item" href="#">
+        <a className="dropdown-item" href="#">
           Something else here
         </a>
       </div>

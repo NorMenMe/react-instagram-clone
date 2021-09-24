@@ -61,3 +61,11 @@ packages needed:
 
 - optimize name of state photos
 - the names of the small rounded images shouldn't be random on mounting
+
+##############
+
+next : "tagged" functionality has to work
+
+- inside header-cards should run random Name only on load, not when component is mounting
+- header cards fixed names
+- make the link component togglebuttonpost reusable, pass down the prop value "POSTS" etc.
