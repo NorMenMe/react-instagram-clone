@@ -17,6 +17,8 @@ function HeaderCards() {
 
   useEffect(() => {
     getTrees();
+
+    // console.log("mounting header-cards");
   }, []);
 
   const mapped = trees.slice(0, 3).map((obj, index) => {

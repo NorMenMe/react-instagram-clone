@@ -24,7 +24,7 @@ function ToggleCards({ value }) {
 
   useEffect(() => {
     readData();
-  }, []);
+  }, [value]);
 
   const mapped = photosCards.slice(0, 9).map((item, index) => {
     return (

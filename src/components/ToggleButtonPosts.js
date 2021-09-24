@@ -4,7 +4,7 @@ import PhotosContext from "../context/initilizeContext";
 function ToggleButtonPosts() {
   const { color, setColor } = useContext(PhotosContext);
 
-  console.log(color);
+  // console.log(color);
 
   // const updateColor = (e) => {
   //   e.preventDefault()
@@ -14,7 +14,7 @@ function ToggleButtonPosts() {
   return (
     <button
       className="toggle-btn-posts"
-      style={{ color: color ? "black" : "grey" }}
+      style={{ color: color ? "grey" : "black" }}
       onClick={() => setColor(!color)}
       // onClick={(e) => updateColor(e)}
     >

@@ -69,3 +69,7 @@ next : "tagged" functionality has to work
 - inside header-cards should run random Name only on load, not when component is mounting
 - header cards fixed names
 - make the link component togglebuttonpost reusable, pass down the prop value "POSTS" etc.
+
+- learn NavLink,react router dom
+
+- instead of Link , Navigation comp, inside Link Comp , when the its clicked then update a state

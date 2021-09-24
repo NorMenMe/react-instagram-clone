@@ -1,16 +1,16 @@
 import React, { useState, useContext } from "react";
 import PhotosContext from "../context/initilizeContext";
 
-function ToggleButtonTaggs({ posts }) {
+function ToggleButtonTagged({ posts }) {
   // const [color, setColor] = useState(true);
   const { color, setColor } = useContext(PhotosContext);
 
-  console.log(color);
+  // console.log(color);
 
   return (
     <button
       className="toggle-btn-posts"
-      style={{ color: color ? "grey" : "black" }}
+      style={{ color: color ? "black" : "grey" }}
       onClick={() => setColor(!color)}
     >
       TAGGED
@@ -18,4 +18,4 @@ function ToggleButtonTaggs({ posts }) {
   );
 }
 
-export default ToggleButtonTaggs;
+export default ToggleButtonTagged;

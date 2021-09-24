@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function Card({ photo }) {
   const randomName = (length) => {
@@ -9,6 +9,12 @@ function Card({ photo }) {
     }
     return result.split("").join("").toUpperCase();
   };
+
+  console.log("mounting card");
+
+  // useEffect(() => {
+
+  // }, []);
 
   return (
     <div className="header-cards">
