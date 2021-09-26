@@ -73,3 +73,5 @@ next : "tagged" functionality has to work
 - learn NavLink,react router dom
 
 - instead of Link , Navigation comp, inside Link Comp , when the its clicked then update a state
+
+- next: inside ToggleCards , refactor Card comp without bootstrap , then css of "wrapper-cards"

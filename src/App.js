@@ -24,24 +24,11 @@ function App() {
       <Navbar className="Navbar" />
       <div className="master-wrapper">
         <Header />
-        {/* <div className="wrapper-posts-tagged-link">
-          <Link to="/posts">
-            <ToggleButtonPosts />
-          </Link>
-          <Link to="/tagged">
-            <ToggleButtonTagged />
-          </Link>
-        </div> */}
+
         <Switch>
           <Route>
             <WrapperCards />
           </Route>
-          {/* <Route exact path="/posts">
-            <ToggleCards value="nature" />
-          </Route>
-          <Route exact path="/tagged">
-            <ToggleCards value="music" />
-          </Route> */}
         </Switch>
       </div>
     </>

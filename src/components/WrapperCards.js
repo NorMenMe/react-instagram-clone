@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import ToggleCards from "./ToggleCards";
+import BtnPosts from "./BtnPosts.js";
+import BtnTagged from "./BtnTagged.js";
 
 function WrapperCards() {
   const [color, setColor] = useState("black");
@@ -8,25 +9,19 @@ function WrapperCards() {
 
   const setFunction = () => {
     setColor(!color);
-    setValue("music");
+    setValue(value === "music" ? "nature" : "music");
   };
 
-  console.log(value);
+  // console.log(value);
 
   return (
-    <div>
-      <Link>
-        <button
-          className="toggle-btn-posts"
-          style={{ color: color ? "grey" : "black" }}
-          onClick={() => setFunction()}
-        >
-          POSTS
-        </button>
-      </Link>
-
+    <section className="wrapper-cards">
+      <div className="container-btns">
+        <BtnPosts color={color} setFunction={setFunction} />
+        <BtnTagged color={color} setFunction={setFunction} />
+      </div>
       <ToggleCards value={value} />
-    </div>
+    </section>
   );
 }
 
