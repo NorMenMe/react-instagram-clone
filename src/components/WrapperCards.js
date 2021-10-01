@@ -15,7 +15,7 @@ function WrapperCards() {
   // console.log(value);
 
   return (
-    <section className="wrapper-cards">
+    <section className="wrapper-btns-cards">
       <div className="container-btns">
         <BtnPosts color={color} setFunction={setFunction} />
         <BtnTagged color={color} setFunction={setFunction} />

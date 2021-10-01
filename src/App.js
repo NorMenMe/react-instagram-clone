@@ -24,12 +24,7 @@ function App() {
       <Navbar className="Navbar" />
       <div className="master-wrapper">
         <Header />
-
-        <Switch>
-          <Route>
-            <WrapperCards />
-          </Route>
-        </Switch>
+        <WrapperCards />
       </div>
     </>
   );

@@ -63,6 +63,7 @@ packages needed:
 - the names of the small rounded images shouldn't be random on mounting
 
 ##############
+try to build with useFetch and react-form-hook
 
 next : "tagged" functionality has to work
 
@@ -74,4 +75,4 @@ next : "tagged" functionality has to work
 
 - instead of Link , Navigation comp, inside Link Comp , when the its clicked then update a state
 
-- next: inside ToggleCards , refactor Card comp without bootstrap , then css of "wrapper-cards"
+- next: work on the header comp

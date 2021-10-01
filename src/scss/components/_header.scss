@@ -14,28 +14,34 @@
     // @include center;
 
     .wrapper-header-img {
-      outline: 2px solid yellow;
-      width: 35%;
-      height: 6rem;
-      @include center;
+      // outline: 2px solid yellow;
+      // width: 35%;
+      // height: 6rem;
+      // @include center;
 
       .circle-instagram {
-        outline: 2px solid green;
-
+        // outline: 2px solid green;
         width: 11rem;
         height: 11rem;
-        background: linear-gradient(40deg, #ffbb00, #ff6f5f, #d92d7a, #c52b92);
-        align-items: center;
+        // background: #f09433;
+        background: linear-gradient(
+          45deg,
+          #f09433 0%,
+          #e6683c 25%,
+          #dc2743 50%,
+          #cc2366 75%,
+          #bc1888 100%
+        );
+
         @include center;
         border-radius: 100%;
 
         .circle-white {
-          outline: 2px solid red;
+          // outline: 2px solid red;
 
           width: 10.5rem;
           height: 10.5rem;
           background-color: white;
-          align-items: center;
           @include center;
           border-radius: 100%;
 
@@ -46,39 +52,6 @@
             object-fit: cover;
             border-radius: 100%;
           }
-        }
-      }
-
-      .wrapper-header-info {
-        // outline: 2px solid red;
-        width: 65%;
-
-        .topper {
-          // outline: 2px solid red;
-          @include start;
-
-          .name {
-            width: 40%;
-            display: inline-block;
-          }
-
-          .logos {
-            @include evenly;
-            width: 30%;
-
-            // outline: 2px solid red;
-          }
-        }
-
-        .stats {
-          @include evenly;
-          margin-top: 1rem;
-
-          font-weight: bold;
-        }
-
-        .shop-info-name {
-          font-weight: bold;
         }
       }
     }
@@ -110,12 +83,51 @@
       width: 9rem;
       height: 9rem;
       border-radius: 100%;
-      border: 1px solid grey;
+      border: 1px solid #8080806e;
       @include center;
     }
 
     .card-title {
       font-size: 16px;
+    }
+  }
+
+  .wrapper-header-info {
+    // outline: 2px solid red;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+    .topper {
+      // outline: 2px solid red;
+      // @include start;
+      // display: flex;
+      display: flex;
+      flex-direction: row;
+
+      .name {
+        width: 40%;
+        display: inline-block;
+      }
+
+      .logos {
+        display: flex;
+        // @include evenly;
+        width: 30%;
+
+        // outline: 2px solid red;
+      }
+    }
+
+    .stats {
+      @include evenly;
+      margin-top: 1rem;
+
+      font-weight: bold;
+    }
+
+    .shop-info-name {
+      font-weight: bold;
     }
   }
 }

@@ -1,6 +1,6 @@
-.wrapper-cards {
+.wrapper-btns-cards {
   width: 100%;
-  border: 2px solid red;
+  // border: 2px solid red;
   //   @include center;
   display: flex;
   flex-direction: column;
@@ -15,6 +15,22 @@
     .btn-bg {
       background-color: transparent;
       border: none;
+    }
+  }
+  .container-cards {
+    width: 100%;
+    // border: 2px solid red;
+    @include center;
+    flex-wrap: wrap;
+
+    .cardImage {
+      width: 29rem;
+      height: 29rem;
+      object-fit: cover;
+      object-position: center;
+      padding: 2%;
+      border: none;
+      cursor: pointer;
     }
   }
 }

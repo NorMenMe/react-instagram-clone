@@ -10,8 +10,6 @@ function ToggleCards({ value }) {
 
   const API = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_API_KEY}&query=${value}&orientation=landscape`;
 
-  console.log(value);
-
   const readData = async () => {
     try {
       axios.get(API).then(function (response) {
@@ -27,17 +25,10 @@ function ToggleCards({ value }) {
   }, [value]);
 
   const mapped = photosCards.slice(0, 9).map((item, index) => {
-    return (
-      <Card.Img
-        className="card"
-        variant="top"
-        key={index}
-        src={item.urls.regular}
-      />
-    );
+    return <img src={item.urls.regular} className="cardImage" key={index} />;
   });
 
-  return <div className="wrapper-posts">{mapped}</div>;
+  return <section className="container-cards">{mapped}</section>;
 }
 
 export default ToggleCards;

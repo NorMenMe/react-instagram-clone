@@ -11,13 +11,13 @@ function Header() {
   return (
     <div className="container-wrapper-header">
       <div className="wrapper-header">
-        <div className="wrapper-header-img">
+        <section className="wrapper-header-img">
           <div className="circle-instagram">
             <div className="circle-white">
               <img className="header-img" src={database[0].image} />
             </div>
           </div>
-        </div>
+        </section>
         <HeaderInfo />
       </div>
       <HeaderCards />

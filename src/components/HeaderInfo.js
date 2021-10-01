@@ -6,7 +6,7 @@ import Dropdown from "./Dropdown";
 
 function HeaderInfo() {
   return (
-    <div className="wrapper-header-info">
+    <section className="wrapper-header-info">
       <div className="topper">
         <h4 className="name">alexandriaocasio</h4>
         <div className="logos">
@@ -36,7 +36,7 @@ function HeaderInfo() {
           drinking vinegar pop-up kickstarter.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 
