@@ -23,9 +23,15 @@ function HeaderInfo() {
         </div>
       </div>
       <div className="stats">
-        <p className="posts">4340 posts</p>
-        <p className="followers">3m followers</p>
-        <p className="following">345 following</p>
+        <p className="posts">
+          <span>4340</span> posts
+        </p>
+        <p className="followers">
+          <span>3m</span> followers
+        </p>
+        <p className="following">
+          <span>345 </span>following
+        </p>
       </div>
       <div className="shop-info">
         <h6 className="shop-info-name">Alexandria Ocasio-Cortez</h6>

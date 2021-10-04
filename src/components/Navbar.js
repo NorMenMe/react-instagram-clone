@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { ImInstagram } from "react-icons/im";
 import { Button } from "react-bootstrap";
 import logo from "../logos/logo-instagram.svg";
+import BtnSignupLogin from "./BtnSignupLogin";
+
+const loginLink = "https://www.instagram.com/accounts/login/?hl=en";
+
+const signupLink = "https://www.instagram.com/accounts/emailsignup/?hl=en";
 
 function Navbar() {
   return (
@@ -17,12 +22,12 @@ function Navbar() {
           </div>
           <div>
             <ul>
-              <Link to="/navbar/login" className="ml-3">
-                <Button>Login</Button>
-              </Link>
-              <Link to="/navbar/signup" className="ml-3">
-                <Button>Signup</Button>
-              </Link>
+              <li>
+                <BtnSignupLogin link={loginLink} value={"Login"} />
+              </li>
+              <li>
+                <BtnSignupLogin link={signupLink} value={"Signup"} />
+              </li>
             </ul>
           </div>
         </div>

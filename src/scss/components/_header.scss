@@ -62,6 +62,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-top: 3rem;
 
     .header-cards {
       // outline: 1px solid green;
@@ -69,19 +70,19 @@
       flex-direction: column;
       align-items: center;
       align-items: center;
-      padding-left: 1rem;
+      margin-right: 3rem;
     }
 
     .card-img {
       object-fit: cover;
-      width: 8rem;
-      height: 8rem;
+      width: 5rem;
+      height: 5rem;
       border-radius: 100%;
     }
 
     .card-circle {
-      width: 9rem;
-      height: 9rem;
+      width: 6rem;
+      height: 6rem;
       border-radius: 100%;
       border: 1px solid #8080806e;
       @include center;
@@ -112,7 +113,7 @@
 
       .logos {
         display: flex;
-        // @include evenly;
+        justify-content: space-between;
         width: 30%;
 
         // outline: 2px solid red;
@@ -123,7 +124,9 @@
       @include evenly;
       margin-top: 1rem;
 
-      font-weight: bold;
+      p span {
+        font-weight: bold;
+      }
     }
 
     .shop-info-name {
