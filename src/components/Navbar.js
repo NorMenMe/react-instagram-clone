@@ -20,8 +20,8 @@ function Navbar() {
           <div>
             <input type="text" placeholder="&#128269; Search" />
           </div>
-          <div>
-            <ul>
+          <section className="section-btns">
+            <ul className="wrapper-btn-signup-login">
               <li>
                 <BtnSignupLogin link={loginLink} value={"Login"} />
               </li>
@@ -29,7 +29,7 @@ function Navbar() {
                 <BtnSignupLogin link={signupLink} value={"Signup"} />
               </li>
             </ul>
-          </div>
+          </section>
         </div>
       </nav>
     </div>

@@ -75,4 +75,4 @@ next : "tagged" functionality has to work
 
 - instead of Link , Navigation comp, inside Link Comp , when the its clicked then update a state
 
-- next: @ Navbar , style login signup with links
+- next: @ Navbar , style login signup btns

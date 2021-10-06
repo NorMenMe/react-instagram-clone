@@ -2,7 +2,7 @@ import React from "react";
 
 function BtnSignupLogin({ link, value }) {
   return (
-    <button>
+    <button className="btn-signup-login">
       <a href={link}>{value}</a>
     </button>
   );

@@ -13,8 +13,38 @@
       width: 8rem;
     }
 
-    .ml-3 {
-      margin-left: 2rem;
+    // .ml-3 {
+    //   margin-left: 2rem;
+    // }
+
+    .section-btns {
+      .wrapper-btn-signup-login {
+        // outline: 2px solid red;
+        width: 11rem;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          list-style-type: none;
+          // text-decoration: none;
+        }
+
+        button {
+          background-color: $secondary;
+          border: none;
+          border-radius: 3px 3px;
+          width: 4rem;
+          padding: 4%;
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        // .btn-signup-login {
+        // }
+      }
     }
   }
 }
