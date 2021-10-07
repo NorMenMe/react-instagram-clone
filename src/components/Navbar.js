@@ -20,15 +20,9 @@ function Navbar() {
           <div>
             <input type="text" placeholder="&#128269; Search" />
           </div>
-          <section className="section-btns">
-            <ul className="wrapper-btn-signup-login">
-              <li>
-                <BtnSignupLogin link={loginLink} value={"Login"} />
-              </li>
-              <li>
-                <BtnSignupLogin link={signupLink} value={"Signup"} />
-              </li>
-            </ul>
+          <section className="wrapper-btn-signup-login">
+            <BtnSignupLogin link={loginLink} value={"Login"} />
+            <BtnSignupLogin link={signupLink} value={"Signup"} />
           </section>
         </div>
       </nav>

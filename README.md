@@ -53,26 +53,12 @@ packages needed:
 
 ###################
 
-// next : interchange color navbar/ body
-
-// next :gradient of main photo, read and inspire from code of senzig
-
-// next : tagged functionality:
-
-- optimize name of state photos
-- the names of the small rounded images shouldn't be random on mounting
-
 ##############
-try to build with useFetch and react-form-hook
+try to build with useFetch
 
 next : "tagged" functionality has to work
 
-- inside header-cards should run random Name only on load, not when component is mounting
-- header cards fixed names
-- make the link component togglebuttonpost reusable, pass down the prop value "POSTS" etc.
-
-- learn NavLink,react router dom
-
-- instead of Link , Navigation comp, inside Link Comp , when the its clicked then update a state
-
-- next: @ Navbar , style login signup btns
+- todos:
+  - secrets into .env , config
+  - hover for btns "posts & tagged"
+  - react responsive
