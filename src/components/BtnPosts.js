@@ -8,7 +8,7 @@ function BtnPosts({ color, setFunction }) {
         style={{ color: color ? "grey" : "black" }}
         onClick={() => setFunction()}
       >
-        POSTS
+        <span>POSTS</span>
       </button>
     </>
   );

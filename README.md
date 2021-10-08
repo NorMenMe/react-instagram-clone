@@ -60,6 +60,8 @@ next : "tagged" functionality has to work
 
 - todos:
 
-  - hover for btns "posts & tagged"
+  - hover for btns "posts & tagged" with a box-shadow effect
+  - or search underline thingy
+
   - react responsive
   - organize code with importers.js

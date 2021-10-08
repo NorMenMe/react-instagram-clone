@@ -8,7 +8,7 @@ function BtnTagged({ color, setFunction }) {
         style={{ color: color ? "black" : "grey" }}
         onClick={() => setFunction()}
       >
-        TAGGED
+        <span>TAGGED</span>
       </button>
     </>
   );

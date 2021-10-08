@@ -15,8 +15,9 @@
     .btn-bg {
       background-color: transparent;
       border: none;
-      & :hover {
-        color: blue;
+
+      span:hover {
+        color: $secondary;
       }
     }
 
