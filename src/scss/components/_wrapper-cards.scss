@@ -15,7 +15,14 @@
     .btn-bg {
       background-color: transparent;
       border: none;
+      & :hover {
+        color: blue;
+      }
     }
+
+    // .btn-bg:hover {
+    //   color: blue;
+    // }
   }
   .container-cards {
     width: 100%;

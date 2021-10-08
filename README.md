@@ -59,6 +59,7 @@ try to build with useFetch
 next : "tagged" functionality has to work
 
 - todos:
-  - secrets into .env , config
+
   - hover for btns "posts & tagged"
   - react responsive
+  - organize code with importers.js
