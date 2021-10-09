@@ -1,2 +1,5 @@
-@media (max-width: 575.98px) {
+.topper {
+  @media (max-width: 575.98px) {
+    flex-direction: column;
+  }
 }

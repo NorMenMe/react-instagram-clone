@@ -9,6 +9,11 @@
     justify-content: space-around;
     align-items: center;
 
+    @media (max-width: 575.98px) {
+      flex-direction: column;
+      height: 8rem;
+    }
+
     .logo-instagram {
       width: 8rem;
     }
