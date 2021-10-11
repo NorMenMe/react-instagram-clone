@@ -12,6 +12,10 @@
     justify-content: space-between;
     align-items: center;
     // @include center;
+    @media (max-width: 575.98px) {
+      align-items: center;
+      flex-direction: column;
+    }
 
     .wrapper-header-img {
       // outline: 2px solid yellow;
@@ -98,6 +102,9 @@
     width: 65%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 575.98px) {
+      margin-top: 2rem;
+    }
 
     .topper {
       // outline: 2px solid red;
@@ -120,7 +127,10 @@
         justify-content: space-between;
         width: 30%;
 
-        // outline: 2px solid red;
+        @media (max-width: 575.98px) {
+          padding: 4%;
+          width: auto;
+        }
       }
     }
 
