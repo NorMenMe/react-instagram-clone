@@ -6,7 +6,7 @@ A basic instagram website clone, done with React.
 
 ### Website Live Show :
 
-[instagram-clone](https://normenme.github.io/shopping-list/)
+[instagram-clone](https://normenme.github.io/react-instagram-clone/)
 
 ### 🔧 Built with :
 
