@@ -22,17 +22,17 @@ function HeaderInfo() {
           </div>
         </div>
       </div>
-      <div className="stats">
-        <p className="posts">
+      <ul className="stats">
+        <li className="posts">
           <span>4340</span> posts
-        </p>
-        <p className="followers">
+        </li>
+        <li className="followers">
           <span>3m</span> followers
-        </p>
-        <p className="following">
+        </li>
+        <li className="following">
           <span>345 </span>following
-        </p>
-      </div>
+        </li>
+      </ul>
       <div className="shop-info">
         <h6 className="shop-info-name">Alexandria Ocasio-Cortez</h6>
         <p>

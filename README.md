@@ -1,69 +1,15 @@
-- implement this project with Backend?
-- this project is not responsive
+👋 Welcome here.
 
-- breakdown-notes:
+### Description:
 
--nr components?
+A basic instagram website clone, done with React.
 
-- functionalities ?
-- how many sites ?
-- which Component should be reusable ?
+### Website Live Show :
 
-- which tech pro site / comp ?
+[instagram-clone](https://normenme.github.io/shopping-list/)
 
-- Component list :
+### 🔧 Built with :
 
-- Navbar
-- Header
-- Main
-- into <main> section Links that shows cards , inside - Cards
-
-```
-
-packages needed:
-- react-router-dom
-- bootstrap
-
-```
-
-- Navbar :
-
-~ bootstrap component, logo, search for search input with lens
-
-~ Link : to home / email / safari / like / account + for <main> section : Link to post/reels/IGTV/ tagged
-
-- Header :
-- Profile
-- Friends
-
-2 divs,
-\_\_ div: Profile: 2 divs / avatar photo + InfoHeader: avatar's name,button etc.
-
----
-
-\_\_ div: Cards then cards of photos
-
-- Link : react router , show each component on same site
-
-#############################################################
-// try fetch with axios: refactor the fetch with apiCall module
-
-// toggle functionality between tagged and posts
-// on Click style of p change style ref :https://stackoverflow.com/questions/63154498/change-component-property-through-onclick
-
-###################
-
-##############
-try to build with useFetch
-
-next : "tagged" functionality has to work
-
-- todos:
-
-  - react responsive
-  - or search underline thingy
-
-  poolish :
-
-  - organize code with importers.js ?
-  - add more variables or mixins ?
+- [Axios](https://axios-http.com/docs/intro)
+- [React-Context](https://reactjs.org/docs/context.html)
+- [Sass](https://sass-lang.com/)

@@ -12,8 +12,6 @@ function WrapperCards() {
     setValue(value === "music" ? "nature" : "music");
   };
 
-  // console.log(value);
-
   return (
     <section className="wrapper-btns-cards">
       <div className="container-btns">

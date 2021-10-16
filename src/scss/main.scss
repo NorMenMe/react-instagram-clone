@@ -12,7 +12,6 @@
 .master-wrapper {
   width: 80%;
   margin: 0 auto;
-  //   outline: 2px solid red;
 
   .wrapper-posts-tagged-link {
     @include evenly;
@@ -21,12 +20,6 @@
       background-color: white;
       border: none;
     }
-
-    // .link-posts {
-    //   display: inline-block;
-    //   text-decoration: none;
-    //   color: $primary;
-    // }
 
     .link-tagged {
       display: inline-block;

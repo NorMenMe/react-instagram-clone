@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 function Card({ photo }) {
   const randomName = (length) => {
@@ -10,19 +10,13 @@ function Card({ photo }) {
     return result.split("").join("").toUpperCase();
   };
 
-  console.log("mounting card");
-
-  // useEffect(() => {
-
-  // }, []);
-
   return (
-    <div className="header-cards">
+    <section className="header-cards">
       <div className="card-circle">
-        <img className="card-img" src={photo} alt="image of tree" />
+        <img className="card-img" src={photo} alt={""} />
       </div>
       <p className="card-title">{randomName(4)}</p>
-    </div>
+    </section>
   );
 }
 

@@ -18,19 +18,13 @@
       width: 8rem;
     }
 
-    // .ml-3 {
-    //   margin-left: 2rem;
-    // }
-
     .wrapper-btn-signup-login {
-      // outline: 2px solid red;
       width: 11rem;
       display: flex;
       justify-content: space-around;
 
       li {
         list-style-type: none;
-        // text-decoration: none;
       }
 
       button {
@@ -45,9 +39,6 @@
         color: white;
         text-decoration: none;
       }
-
-      // .btn-signup-login {
-      // }
     }
   }
 }

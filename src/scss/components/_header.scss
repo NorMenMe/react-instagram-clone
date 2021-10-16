@@ -1,33 +1,23 @@
 .container-wrapper-header {
-  // outline: 2px solid green;
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
   @include column;
 
   .wrapper-header {
-    // outline: 2px solid green;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // @include center;
     @media (max-width: 575.98px) {
       align-items: center;
       flex-direction: column;
     }
 
     .wrapper-header-img {
-      // outline: 2px solid yellow;
-      // width: 35%;
-      // height: 6rem;
-      // @include center;
-
       .circle-instagram {
-        // outline: 2px solid green;
         width: 11rem;
         height: 11rem;
-        // background: #f09433;
         background: linear-gradient(
           45deg,
           #f09433 0%,
@@ -41,8 +31,6 @@
         border-radius: 100%;
 
         .circle-white {
-          // outline: 2px solid red;
-
           width: 10.5rem;
           height: 10.5rem;
           background-color: white;
@@ -61,7 +49,6 @@
     }
   }
   .wrapper-header-cards {
-    // outline: 1px solid red;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -69,7 +56,6 @@
     margin-top: 3rem;
 
     .header-cards {
-      // outline: 1px solid green;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -98,7 +84,6 @@
   }
 
   .wrapper-header-info {
-    // outline: 2px solid red;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -107,9 +92,6 @@
     }
 
     .topper {
-      // outline: 2px solid red;
-      // @include start;
-      // display: flex;
       display: flex;
       flex-direction: row;
 
@@ -138,8 +120,12 @@
       @include evenly;
       margin-top: 1rem;
 
-      p span {
-        font-weight: bold;
+      li {
+        list-style-type: none;
+
+        span {
+          font-weight: bold;
+        }
       }
     }
 

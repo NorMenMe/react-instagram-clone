@@ -3,8 +3,6 @@ import axios from "axios";
 import Card from "./Card.js";
 import config from "../config/config.js";
 
-// const UNSPLASH_API_KEY = "wXUfFtJ9NppCBXFFQjEyPOJWvAEzxtxUA9K5Pe3xVUY";
-
 const API = `https://api.unsplash.com/search/photos?client_id=${config.env}&query=trees&orientation=landscape`;
 
 function HeaderCards() {
@@ -18,8 +16,6 @@ function HeaderCards() {
 
   useEffect(() => {
     getTrees();
-
-    // console.log("mounting header-cards");
   }, []);
 
   const mapped = trees.slice(0, 3).map((obj, index) => {

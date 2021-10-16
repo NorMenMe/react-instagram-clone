@@ -2,7 +2,7 @@ import React from "react";
 
 function Dropdown() {
   return (
-    <div class="dropdown">
+    <div className="dropdown">
       <button
         className="btn btn-primary dropdown-toggle"
         type="button"
@@ -12,13 +12,13 @@ function Dropdown() {
         aria-expanded="false"
       ></button>
       <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="https://google.com">
           Action
         </a>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="https://google.com">
           Another action
         </a>
-        <a className="dropdown-item" href="#">
+        <a className="dropdown-item" href="https://google.com">
           Something else here
         </a>
       </div>
