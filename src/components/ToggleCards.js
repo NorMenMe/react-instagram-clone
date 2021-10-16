@@ -20,7 +20,7 @@ function ToggleCards({ value }) {
   useEffect(() => {
     readData();
     // eslint-disable-next-line
-  }, []);
+  }, [value]);
 
   const mapped = photosCards.slice(0, 9).map((item, index) => {
     return (
