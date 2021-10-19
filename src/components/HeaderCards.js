@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "./Card.js";
-import config from "../config/config.js";
 
-const API = `https://api.unsplash.com/search/photos?client_id=${config.env}&query=trees&orientation=landscape`;
+const API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
+
+const API = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=trees&orientation=landscape`;
 
 function HeaderCards() {
   const [trees, setTrees] = useState([]);

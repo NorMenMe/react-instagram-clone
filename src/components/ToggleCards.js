@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import config from "../config/config";
 
 function ToggleCards({ value }) {
   const [photosCards, setPhotosCards] = useState([]);
 
-  const API = `https://api.unsplash.com/search/photos?client_id=${config.env}&query=${value}&orientation=landscape`;
+  const API_KEY = process.env.REACT_APP_UNSPLASH_API_KEY;
+
+  const API = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=${value}&orientation=landscape`;
+
+  // const API = `https://api.unsplash.com/search/photos?client_id=${config.env}&query=${value}&orientation=landscape`;
 
   const readData = async () => {
     try {
