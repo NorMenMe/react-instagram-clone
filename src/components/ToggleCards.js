@@ -8,8 +8,6 @@ function ToggleCards({ value }) {
 
   const API = `https://api.unsplash.com/search/photos?client_id=${API_KEY}&query=${value}&orientation=landscape`;
 
-  // const API = `https://api.unsplash.com/search/photos?client_id=${config.env}&query=${value}&orientation=landscape`;
-
   const readData = async () => {
     try {
       axios.get(API).then(function (response) {
