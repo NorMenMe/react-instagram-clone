@@ -13,3 +13,5 @@ A basic instagram website clone, done with React.
 - [Axios](https://axios-http.com/docs/intro)
 - [React-Context](https://reactjs.org/docs/context.html)
 - [Sass](https://sass-lang.com/)
+
+![instagram gif](https://media.giphy.com/media/Q0EGnoBwEY572Wyz5e/giphy.gif)
